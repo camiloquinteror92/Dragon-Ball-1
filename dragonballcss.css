@@ -1,0 +1,58 @@
+#seleccionar-mascota{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center
+}
+
+.titulo img{
+    width: 300px;
+    height: 150px;
+    }
+
+    .subtitulo{
+        color:#fff;
+        font-size:20px
+    }
+    
+    .tarjetas{
+        display:flex;
+        gap:10px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+    .tarjeta-de-mokepon{
+        width: 200px;
+        height: 100px;
+        padding:10px;
+        box-sizing:border-box;
+        border-radius:20px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin-top: 40px;
+    }
+
+    #goku {
+        width:300px;
+        height:230px;
+    }
+
+    #gokuss {
+        width:250px;
+        height: 230px;
+        opacity: 1;
+    }
+
+
+    input {
+        display: none;
+    }
+
+
+    #gokuss:hover {
+    opacity: 1;
+   
+}

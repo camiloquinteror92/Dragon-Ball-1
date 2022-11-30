@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+          <!-- Este etiqueta con este atributo sirve para que reciba caracteres en español con el atributo charset
+            -->
+        <title>Dragon Ball</title>
+        <script src="./Dragonballjs.js"></script>
+         <!-- Esta etiqueta sirve para llamar el codigo en JS
+            -->
+        <link rel="stylesheet" href="./dragonballcss.css"> 
+    </head>
+    <body>
+       
+        <section id="seleccionar-mascota"> 
+
+            <h1 class="titulo">
+                <img id="goku" src="./Assets/Dragon_Ball_anime_logo.png" alt="Yugi OH"> 
+            </h1>
+            <h2 class="subtitulo">Elige tu carta:</h2>
+            
+        <div class="tarjetas">
+            
+            <input type="radio" name="mascota" id="hipodoge"/>
+            <label class="tarjeta-de-mokepon"  for="hipodoge">  
+               
+        
+                <img src="./Assets/Goku-Transparent-File.png" alt="Goku" id="goku" onclick="">
+                <img src="./Assets/gokuss.png" class="hover_img" alt="Goku SS" id="gokuss">
+
+            </label>
+            
+          
+            <!-- Asi se comenta en HTML,este es el input name = sirve para agrupar los radio dentro de un grupo
+                y que el boton salte entre los botones del mismo grupo, Label= identifica el boton con su texto,
+                El atributo for sirve para que el texto seleccione el boton
+                type = sirve para darle el tipo de texto que se recibe a traves del input
+            -->
+           
+            <input type="radio" name="mascota" id="capipepo"/>
+            <label class="tarjeta-de-mokepon" for="capipepo">
+
+                <p>Mago Oscuro</p>
+                <img src="" alt="Mago Oscuro">
+            
+            </label>
+            
+            <input type="radio" name="mascota" id="ratigueya"/>  
+            <label class="tarjeta-de-mokepon"  for="ratigueya">
+                <p>Dragón ojos Azules</p>
+                <img src="" alt="Dragon ojos Azules">
+            </label>
+            
+        </div>
+            <button id="boton-mascota">Seleccionar</button>
+            <!-- la etiqueta button crea un boton y el atributo id = sirve para identificar el boton
+            -->
+        </section>
+        <section id ="seleccionar-ataque">
+            <h1 class="titulo">
+                <img src="" alt="Yugi OH"> 
+            </h1>
+            
+            <h2>Elige tu ataque:</h2>
+
+            <div>
+                <button id="boton-fuego">Fuego 🔥 </button>
+                <button id="boton-agua">Agua 💧 </button>
+                <button id="boton-tierra">Tierra 🌱</button>
+            </div>
+
+            <div>
+                
+            <section id="mensajes">
+            </section>
+            
+            <section id="reiniciar">
+                <button id="boton-reiniciar"> Reiniciar </button>
+            </section>
+            </div>
+
+            <div>   
+                <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id = "vidas-jugador">3</span> vidas</p>
+                <!-- span sirve para poder manipular el DOM desde JS
+               -->
+               <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id = "vidas-enemigo">3</span> vidas</p>
+            </div>          
+
+            
+          
+        </section>
+
+
+     
+    </body>    
+</html>
+ 
